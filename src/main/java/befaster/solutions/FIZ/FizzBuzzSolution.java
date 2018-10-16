@@ -20,9 +20,11 @@ public class FizzBuzzSolution {
         	print = print + " buzz";
         }else if(number % 5 == 0 || nr.contains("5")){
         	print = print + "buzz";
-        }else if(print.equals("fizz buzz") && (number % 3 == 0 && nr.contains("3"))){
+        }
+        if(print.equals("fizz buzz") && (number % 3 == 0 && nr.contains("3"))){
         	print = print + " deluxe";
-        }else if(print.contains("deluxe") && number % 2 == 1){
+        }
+    	if(print.contains("deluxe") && number % 2 == 1){
     		print = print.replace("deluxe", "fake deluxe");
     	}
         /*if(number > 10){
