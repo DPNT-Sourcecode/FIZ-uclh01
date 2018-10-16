@@ -21,7 +21,10 @@ public class FizzBuzzSolution {
         }else if(number % 5 == 0 || nr.contains("5")){
         	print = print + "buzz";
         }
-        if(number > 10){
+    	if(print.contains("deluxe") && number % 2 == 1){
+    		
+    	}
+        /*if(number > 10){
         	int c = number % 10;
         	int copy = number/10;
         	boolean deluxe = true;
@@ -58,7 +61,7 @@ public class FizzBuzzSolution {
         	}else if (fakeDeluxe == true && print.equals("")){
         		print = "fake deluxe";
         	}
-        }
+        }*/
         if(print == "")
         	return nr;
         return print;
