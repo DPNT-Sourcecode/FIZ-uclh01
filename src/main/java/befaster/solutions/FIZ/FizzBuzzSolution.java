@@ -5,15 +5,16 @@ import befaster.runner.SolutionNotImplementedException;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
+    	String print = "";
     	String nr = ""+number;
     	if( (number % 3 == 0 || nr.contains("3")) && (number % 5 == 0 || nr.contains("5")) ){
-        	return "fizz buzz";
+        	print = print + "fizz buzz";
         }
         if(number % 3 == 0 || nr.contains("3")){
-        	return "fizz";
+        	print = print + "fizz";
         }
         if(number % 5 == 0 || nr.contains("5")){
-        	return "buzz";
+        	print = print + "buzz";
         }
         if(number > 10){
         	int c = number % 10;
@@ -22,13 +23,15 @@ public class FizzBuzzSolution {
         	while(copy > 0){
         		if(copy % 10 != c){
         			t = false;
-        		}		
+        			break;
+        		}	
+        		copy = copy / 10;
         	}
         	if(t == true){
-        		return "deluxe";
+        		print = print + "deluxe";
         	}
         }
-        return ""+number;
+        return print;
     }
 
 }
