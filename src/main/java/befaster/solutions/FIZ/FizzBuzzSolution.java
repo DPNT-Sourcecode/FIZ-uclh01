@@ -32,6 +32,8 @@ public class FizzBuzzSolution {
         		print = print + " deluxe";
         	}
         }
+        if(print == "")
+        	return nr;
         return print;
     }
 
