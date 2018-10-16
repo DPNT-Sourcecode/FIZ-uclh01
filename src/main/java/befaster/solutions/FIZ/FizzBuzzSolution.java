@@ -49,6 +49,8 @@ public class FizzBuzzSolution {
         		print = "fizz fake deluxe";
         	}else if (fakeDeluxe == true && print.equals("buzz")){
         		print = "buzz fake deluxe";
+        	}else if (fakeDeluxe == true && print.equals("")){
+        		print = "fake deluxe";
         	}
         }
         if(print == "")
