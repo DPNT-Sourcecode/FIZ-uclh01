@@ -18,21 +18,23 @@ public class FizzBuzzSolution {
         if(number > 10){
         	int c = number % 10;
         	int copy = number/10;
-        	boolean t = true;
+        	boolean deluxe = true;
         	while(copy > 0){
         		if(copy % 10 != c){
-        			t = false;
+        			deluxe = false;
         			break;
         		}	
         		copy = copy / 10;
         	}
-        	if(t == true && print == ""){
+        	if(deluxe == true && print == "" && number % 2 == 1){
+        		print = print + "fake deluxe";
+        	}else if (deluxe == true && print == "" && number % 2 == 0){
         		print = print + "deluxe";
-        	}else if (t == true && print.equals("fizz buzz")){
+        	}else if (deluxe == true && print.equals("fizz buzz")){
         		print = print + " deluxe";
-        	}else if (t == true && print.equals("fizz")){
+        	}else if (deluxe == true && print.equals("fizz")){
         		print = "fizz deluxe";
-        	}else if (t == true && print.equals("buzz")){
+        	}else if (deluxe == true && print.equals("buzz")){
         		print = "buzz deluxe";
         	}
         }
