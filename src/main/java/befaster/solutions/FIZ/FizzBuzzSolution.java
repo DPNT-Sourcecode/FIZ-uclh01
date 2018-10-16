@@ -15,6 +15,19 @@ public class FizzBuzzSolution {
         if(number % 5 == 0 || nr.contains("5")){
         	return "buzz";
         }
+        if(number > 10){
+        	int c = number % 10;
+        	int copy = number/10;
+        	boolean t = true;
+        	while(copy > 0){
+        		if(copy % 10 != c){
+        			t = false;
+        		}		
+        	}
+        	if(t == true){
+        		return "deluxe";
+        	}
+        }
         return ""+number;
     }
 
