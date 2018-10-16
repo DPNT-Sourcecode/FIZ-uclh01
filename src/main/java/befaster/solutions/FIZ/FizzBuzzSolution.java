@@ -30,6 +30,10 @@ public class FizzBuzzSolution {
         		print = print + "deluxe";
         	}else if (t == true && print.equals("fizz buzz")){
         		print = print + " deluxe";
+        	}else if (t == true && print.equals("fizz")){
+        		print = "fizz deluxe";
+        	}else if (t == true && print.equals("buzz")){
+        		print = "buzz deluxe";
         	}
         }
         if(print == "")
