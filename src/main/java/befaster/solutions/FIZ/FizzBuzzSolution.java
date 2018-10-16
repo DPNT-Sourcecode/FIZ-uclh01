@@ -29,9 +29,10 @@ public class FizzBuzzSolution {
         	}
         	if(deluxe == true && number % 2 == 1){
         		fakeDeluxe = true;
+        		deluxe = false;
         	}
         	if(deluxe == true && print == "" && number % 2 == 1){
-        		//fakeDeluxe = true;
+        		fakeDeluxe = true;
         		deluxe = false;
         		print = "fake deluxe";
         	}else if (deluxe == true && print == "" && number % 2 == 0){
