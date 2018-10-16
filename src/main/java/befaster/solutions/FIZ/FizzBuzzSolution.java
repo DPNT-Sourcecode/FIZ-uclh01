@@ -6,7 +6,7 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
     	String nr = ""+number;
-    	if(number % 3 == 0 || nr.contains("3") && number % 5 == 0 || nr.contains("5")){
+    	if( (number % 3 == 0 || nr.contains("3")) && (number % 5 == 0 || nr.contains("5")) ){
         	return "fizz buzz";
         }
         if(number % 3 == 0 || nr.contains("3")){
