@@ -10,7 +10,7 @@ public class FizzBuzzSolution {
         if(number % 3 == 0 || nr.contains("3")){
         	print = print + "fizz";
         }
-        if( (number % 5 == 0 || nr.contains("5")) && print == "fizz" ){
+        if( (number % 5 == 0 || nr.contains("5")) && print.equals("fizz") ){
         	print = print + " buzz";
         }else if(number % 5 == 0 || nr.contains("5")){
         	print = print + "buzz";
@@ -28,7 +28,7 @@ public class FizzBuzzSolution {
         	}
         	if(t == true && print == ""){
         		print = print + "deluxe";
-        	}else if (t == true && print == "fizz buzz"){
+        	}else if (t == true && print.equals("fizz buzz")){
         		print = print + " deluxe";
         	}
         }
