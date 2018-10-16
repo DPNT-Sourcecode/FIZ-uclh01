@@ -7,13 +7,15 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
     	String print = "";
     	String nr = ""+number;
-    	if(number % 3 == 0 && nr.contains("3")){
+    	if( (number % 3 == 0 && nr.contains("3")) && !(number % 5 == 0 || nr.contains("5")) ){
     		print = print + "fizz deluxe";
     	}else if(number % 3 == 0 || nr.contains("3")){
         	print = print + "fizz";
         }
     	if( (number % 5 == 0 && nr.contains("5")) && print.equals("fizz") ){
         	print = print + " buzz deluxe";
+        }else if( (number % 5 == 0 && nr.contains("5")) && print.equals("") ){
+        	print = print + "buzz deluxe";
         }else if( (number % 5 == 0 || nr.contains("5")) && print.equals("fizz") ){
         	print = print + " buzz";
         }else if(number % 5 == 0 || nr.contains("5")){
