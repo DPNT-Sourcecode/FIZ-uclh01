@@ -22,7 +22,7 @@ public class FizzBuzzSolution {
         	print = print + "buzz";
         }
     	if(print.contains("deluxe") && number % 2 == 1){
-    		
+    		print = print.replace("deluxe", "fake deluxe");
     	}
         /*if(number > 10){
         	int c = number % 10;
